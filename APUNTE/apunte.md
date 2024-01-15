@@ -402,7 +402,6 @@ La métodologia BEM ofrece varias ventajas que la hacen una opción atractiva pa
 
 El enfoque **Utility-First CSS** se basa en el uso de **clases utilitarias** para construir interfaces de usuario de manera eficiente y altamente personalizable. A diferencia de los enfoques tradicionales que utilizan clases semánticas o componentes, el enfoque Utility-First se centra en clases pequeñas y de propósito único que aplican estilos específicos directamente a los elementos HTML.
 
-
 ## CLASE 35 INSTRRUCCION A RESPONSIVE WEB DESIGN Y MEDIA QUERY
 
 ### ¿Qué es Responsive Web Design?
