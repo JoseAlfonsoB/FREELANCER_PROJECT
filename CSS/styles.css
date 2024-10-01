@@ -8,6 +8,7 @@ h1 {
   text-align: center;
   font-size: 8rem;
 }
-span {
+h1 span {
+  /* Se coloca de esta manera "h1 span" para que los estilos delcarardo se coloquen solo a los span que se encuentren dentro de un elemento h1. */
   font-size: 2rem;
 }
