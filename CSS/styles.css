@@ -14,11 +14,12 @@ html {
 }
 body {
   font-size: 16px; /* 1rem = 10 px*/
+  font-family: "Krub", sans-serif;
 }
 .titulo {
   text-align: center;
   font-size: 3.8rem;
-  color: var(--primario); /* Uso del Custom propertie.*/
+  /* color: var(--primario); Uso del Custom propertie.*/
 }
 
 .titulo span {
