@@ -1,3 +1,14 @@
+/* Son psedoselectores / pseudoelementos: son elementos que no existen o que no estan declarados en el código HTML, sin embargo nosotros podemos hacer uso de estos para almacenar variables de CSS (Custom properties). */
+:root {
+  /* Paleta de colores.
+    Variables de CSS / Custom properties.
+  */
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #ffc107;
+  --secundario: #0097a7;
+  --gris: #757575;
+}
 html {
   font-size: 62.5%;
 }
@@ -7,19 +18,10 @@ body {
 .titulo {
   text-align: center;
   font-size: 3.8rem;
-}
-/* A esto se le conoce como especifidad en CSS. */
-h1.titulo span {
-  /* Se coloca de esta manera "h1 span" para que los estilos delcarardo se coloquen solo a los span que se encuentren dentro de un elemento h1. */
-  font-size: 2rem;
-  color: blue;
+  color: var(--primario); /* Uso del Custom propertie.*/
 }
 
 .titulo span {
   /* Se coloca de esta manera "h1 span" para que los estilos delcarardo se coloquen solo a los span que se encuentren dentro de un elemento h1. */
   font-size: 2rem;
-  color: red;
-}
-span {
-  color: green;
 }
