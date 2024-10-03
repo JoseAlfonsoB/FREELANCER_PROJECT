@@ -37,6 +37,8 @@ body {
 }
 .navegacion-principal {
   padding: 1rem;
+  display: flex; /* Nos permite acceder a más propiedades. */
+  justify-content: space-evenly; /* Para la separacion del texto entre cada enlace. */
 }
 
 .navegacion-principal a {
