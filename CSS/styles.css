@@ -36,4 +36,10 @@ body {
   background-color: var(--secundario);
 }
 .navegacion-principal {
+  padding: 1rem;
+}
+
+.navegacion-principal a {
+  text-decoration: none; /* Esto propiedad es para eliminar la linea inferior de los enlaces. */
+  color: var(--blanco);
 }
