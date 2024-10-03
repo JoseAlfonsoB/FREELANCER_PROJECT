@@ -26,3 +26,14 @@ body {
   /* Se coloca de esta manera "h1 span" para que los estilos delcarardo se coloquen solo a los span que se encuentren dentro de un elemento h1. */
   font-size: 2rem;
 }
+
+.contenedor {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.nav-bg {
+  background-color: var(--secundario);
+}
+.navegacion-principal {
+}
