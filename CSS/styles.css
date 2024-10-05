@@ -36,7 +36,6 @@ body {
   background-color: var(--secundario);
 }
 .navegacion-principal {
-  padding: 1rem;
   display: flex; /* Nos permite acceder a más propiedades. */
   justify-content: space-evenly; /* Para la separacion del texto entre cada enlace. */
 }
@@ -44,4 +43,11 @@ body {
 .navegacion-principal a {
   text-decoration: none; /* Esto propiedad es para eliminar la linea inferior de los enlaces. */
   color: var(--blanco);
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.navegacion-principal a:hover {
+  background-color: var(--primario);
+  color: var(--oscuro);
 }
