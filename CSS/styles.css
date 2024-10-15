@@ -11,6 +11,12 @@
 }
 html {
   font-size: 62.5%;
+  block-size: border-box;
+}
+*,
+*:before,
+*:after {
+  block-size: inherit;
 }
 body {
   font-size: 16px; /* 1rem = 10 px*/
