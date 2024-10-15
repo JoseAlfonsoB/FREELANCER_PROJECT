@@ -72,4 +72,6 @@ body {
   background-image: url(../img/hero.jpg); /* Direccion de la imagen (los dos punto al comienzo son para salir de la carpeta de CSS y entrar a la carpeta de img.)*/
   background-repeat: no-repeat; /*Para no repetir la imagen.*/
   background-size: cover;
+  height: 450px;
+  padding: 20px;
 }
