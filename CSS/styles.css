@@ -28,7 +28,7 @@ body {
 }
 
 .contenedor {
-  max-width: 120rem;
+  max-width: 120rem; /* Es el ancho maximo que soporta la página. */
   margin: 0 auto;
 }
 
@@ -38,7 +38,7 @@ body {
 .navegacion-principal {
   display: flex; /* Nos permite acceder a más propiedades. */
   flex-direction: column;
-  align-items: center; /* Para alinear los elementos en el centro. */
+  /*align-items: center;  Para alinear los elementos en el centro. */
 }
 
 @media (min-width: 768px) {
@@ -49,6 +49,8 @@ body {
 }
 
 .navegacion-principal a {
+  display: block;
+  text-align: center;
   text-decoration: none; /* Esto propiedad es para eliminar la linea inferior de los enlaces. */
   color: var(--blanco);
   font-weight: 700;
@@ -58,4 +60,10 @@ body {
 .navegacion-principal a:hover {
   background-color: var(--primario);
   color: var(--oscuro);
+}
+
+.hero {
+  background-image: url(../img/hero.jpg); /* Direccion de la imagen (los dos punto al comienzo son para salir de la carpeta de CSS y entrar a la carpeta de img.)*/
+  background-repeat: no-repeat; /*Para no repetir la imagen.*/
+  background-size: cover;
 }
