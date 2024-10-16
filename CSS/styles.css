@@ -74,5 +74,21 @@ body {
   background-repeat: no-repeat; /*Para no repetir la imagen.*/
   background-size: cover; /* Sirve para rellenar el formato de la imagen. */
   height: 450px; /* Estas dos propiedades son las que me estan dando problemas con los textos de la imagen. */
-  padding: 20px;
+  /*padding: 20px;*/
+  position: relative;
+}
+.contenido-hero {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5); /*Sintaxis anterior. */
+  background-color: rgb(
+    0 0 0 / 50%
+  ); /* Sintaxis nueva (no tiene mucho soporte. ) */
+  /* Con esto no es necesario que hagamos uso de las coordenadas.  */
+  width: 100%;
+  height: 100%;
+  /* Uso de las cooredenadas.
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;*/
 }
