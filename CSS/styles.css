@@ -69,9 +69,10 @@ body {
 }
 
 .hero {
+  /* AQquí vamos a colocar la imagen de la pagina web. */
   background-image: url(../img/hero.jpg); /* Direccion de la imagen (los dos punto al comienzo son para salir de la carpeta de CSS y entrar a la carpeta de img.)*/
   background-repeat: no-repeat; /*Para no repetir la imagen.*/
-  background-size: cover;
-  height: 450px;
+  background-size: cover; /* Sirve para rellenar el formato de la imagen. */
+  height: 450px; /* Estas dos propiedades son las que me estan dando problemas con los textos de la imagen. */
   padding: 20px;
 }
