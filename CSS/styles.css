@@ -61,6 +61,13 @@ h3 {
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 0.5rem;
+  width: 90%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .boton {
+    width: auto;
+  }
 }
 .nav-bg {
   background-color: var(--secundario);
