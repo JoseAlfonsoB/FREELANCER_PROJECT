@@ -1,4 +1,4 @@
-/* Son psedoselectores / pseudoelementos: son elementos que no existen o que no estan declarados en el código HTML, sin embargo nosotros podemos hacer uso de estos para almacenar variables de CSS (Custom properties). */
+/* Son psedoselectores / pseudoelementos: son elementos que no existen o que no estan declarados en el código html}, sin embargo nosotros podemos hacer uso de estos para almacenar variables de CSS (Custom properties). */
 :root {
   /* Paleta de colores.
     Variables de CSS / Custom properties.
@@ -8,7 +8,9 @@
   --primario: #ffc107;
   --secundario: #0097a7;
   --gris: #757575;
+  --grisClaro: #dfe9f3;
 }
+/* Globales. */
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -21,6 +23,12 @@ html {
 body {
   font-size: 16px; /* 1rem = 10 px*/
   font-family: "Krub", sans-serif;
+  /* Degradado de fondo. */
+  background-image: linear-gradient(
+    to top,
+    var(--grisClaro) 0%,
+    var(--blanco) 100%
+  ); /* Primero le colocamos de donde va a comenzar la direccion del degradado (en este caso va a ir de arriba hacia abajo). */
 }
 /* Estilos para los Headings. */
 h1 {
