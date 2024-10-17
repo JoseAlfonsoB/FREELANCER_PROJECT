@@ -22,10 +22,23 @@ body {
   font-size: 16px; /* 1rem = 10 px*/
   font-family: "Krub", sans-serif;
 }
-.titulo {
-  text-align: center;
+/* Estilos para los Headings. */
+h1 {
   font-size: 3.8rem;
-  /* color: var(--primario); Uso del Custom propertie.*/
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
 }
 
 .titulo span {
@@ -79,9 +92,9 @@ body {
 }
 .contenido-hero {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5); /*Sintaxis anterior. */
+  background-color: rgba(0, 0, 0, 0.6); /*Sintaxis anterior. */
   background-color: rgb(
-    0 0 0 / 50%
+    0 0 0 / 60%
   ); /* Sintaxis nueva (no tiene mucho soporte. ) */
   /* Con esto no es necesario que hagamos uso de las coordenadas.  */
   width: 100%;
@@ -91,4 +104,21 @@ body {
   right: 0;
   left: 0;
   top: 0;*/
+
+  /* --> CODIGO PARA ALINEAR CONTENIDOS TANTO HORIZONTALMENTE COMO VERTICLAMENTE. <-- */
+
+  display: flex; /* Para colocar el contenido de izquierda a derecha (en "fila"). */
+  flex-direction: column;
+  align-items: center; /* Para alinear el contenido horizontalmente. */
+  justify-content: center; /* Para alinear el contenido verticlamente. */
+}
+
+.contenido-hero h2,
+.contenido-hero p {
+  color: var(--blanco);
+}
+
+.ubicacion {
+  display: flex;
+  align-items: flex-end;
 }
