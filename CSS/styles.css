@@ -184,7 +184,13 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
-.servicio .h3 {
+.servicio h3 {
+  color: var(--secundario);
+  font-weight: normal;
+}
+.servicio p {
+  line-height: 2; /* Nos permite colocar un interlineado a nuestros textos (más o menos separación). */
+  text-align: center;
 }
 .servicio .iconos {
   height: 15rem;
