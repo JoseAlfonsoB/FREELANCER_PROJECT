@@ -158,3 +158,21 @@ h3 {
   display: flex;
   align-items: flex-end;
 }
+
+.servicios {
+  display: grid; /* Esta propiedad nos permite agregar las propiedaddes de CSS Grid. */
+  /* Dimensiones de las filas y las columnas.  */
+
+  /*grid-template-columns: 300px 300px;
+  grid-template-rows: 200px 800px;*/
+
+  /* Ahora se mostrara una manera mas corta de hacer lo mismo pero con menos código. RECOMENDACIÓN: Primero hay que familiarizarse con la sintaxis de Grid entetior para despues usar la siguiente sintaxis.  */
+
+  /* 
+  -> grid: 200px 800px / 300px 300px; <- 
+  Aquí se unen las dos indicaciones en una sola linea de código primero coloocamos las dimenciones de los Rows (FILAS) y posteriormente colocamos las dimenciones de las columns (COLUMNAS). Y estas indicaciones las separapos con ayuda de una diagonal. */
+
+  @media (min-width: 768px) { /* PARA HACERLO RESPONSIVE. */
+    grid-template-columns: repeat(3, 1fr) /* 1fr: Una fracción. Esto es lo mismo que poner: (33.3% 33.3% 33.3%)*/;
+  }
+}
