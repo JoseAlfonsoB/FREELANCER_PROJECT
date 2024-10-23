@@ -202,3 +202,27 @@ h3 {
   justify-content: space-evenly; /* <- Centrar horizontalmente. */
   align-items: center; /* <- Centrar verticalmente. */
 }
+
+.formulario {
+  background-color: var(--gris);
+  width: min(
+    60rem,
+    100%
+  ); /* Esta propiedad lo que hace es utilizar el valor más pequeño entre las dos opcioens disponibles. */
+  margin: 0 auto; /* Para centra elementos de manera horizontal. Esta opcion se utliza cuando su elemento padre no tiene un Display-flex. */
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.formulario fieldset {
+  border: none;
+}
+
+.formulario legend {
+  color: var(--primario);
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
