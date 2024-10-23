@@ -71,11 +71,15 @@ h3 {
   border-radius: 0.5rem;
   width: 90%;
   text-align: center;
+  border: none;
 }
 @media (min-width: 768px) {
   .boton {
     width: auto;
   }
+}
+.boton:hover {
+  cursor: pointer;
 }
 
 .sombra {
@@ -87,6 +91,23 @@ h3 {
   padding: 5rem;
   margin-top: 4rem;
 }
+
+/* Utilidades. */
+.w-sm-100 {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .w-sm-100 {
+    width: auto;
+  }
+}
+.flex {
+  display: flex;
+}
+.alinear {
+  justify-content: flex-end;
+}
+
 .nav-bg {
   background-color: var(--secundario);
 }
@@ -225,4 +246,26 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 2rem;
+}
+
+.contenedor_campos {
+}
+.campo label {
+  margin-bottom: 1rem;
+}
+.campo {
+  color: var(--blanco);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+/* Colocamos estilos a los inputs por medio de los "selectores de atributos". 
+.campo input[type="text"] {
+  background-color: red;
+}*/
+.input-text {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
 }

@@ -180,21 +180,35 @@
         <form class="formulario">
           <fieldset>
             <legend>Contactános llenando los campos.</legend>
-            <div>
-              <label>Nombre</label>
-              <input type="text" placeholder="Tu Nombre" />
+            <div class="contenedor_campos">
+              <div class="campo">
+                <label>Nombre</label>
+                <input class="input-text" type="text" placeholder="Tu Nombre" />
+              </div>
+              <div class="campo">
+                <label>Teléfono</label>
+                <input
+                  class="input-text"
+                  type="tel"
+                  placeholder="Tu Teléfono"
+                />
+              </div>
+              <div class="campo">
+                <label>Correo</label>
+                <input
+                  class="input-text"
+                  type="email"
+                  placeholder="Tu Correo"
+                />
+              </div>
+              <div class="campo">
+                <label>Mensaje</label>
+                <textarea class="input-text"></textarea>
+              </div>
             </div>
-            <div>
-              <label>Teléfono</label>
-              <input type="tel" placeholder="Tu Teléfono" />
-            </div>
-            <div>
-              <label>Correo</label>
-              <input type="email" placeholder="Tu Correo" />
-            </div>
-            <div>
-              <label>Mensaje</label>
-              <textarea></textarea>
+            <!-- Fin de la clase: contendedor_campos. -->
+            <div class="alinear flex">
+              <input class="boton w-sm-100" type="submit" value="Enviar" />
             </div>
           </fieldset>
         </form>
