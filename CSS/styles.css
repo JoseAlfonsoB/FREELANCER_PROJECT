@@ -14,6 +14,14 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-snap-type: y mandatory;
+}
+/* Scroll snap. */
+.servicios,
+.navegacion-principal,
+.formulario {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 *,
 *:before,
@@ -180,26 +188,13 @@ h3 {
   align-items: flex-end;
 }
 
-.servicios {
-  display: grid; /* Esta propiedad nos permite agregar las propiedaddes de CSS Grid. */
-  /* Dimensiones de las filas y las columnas.  */
-
-  /*grid-template-columns: 300px 300px;
-  grid-template-rows: 200px 800px;*/
-
-  /* Ahora se mostrara una manera mas corta de hacer lo mismo pero con menos código. RECOMENDACIÓN: Primero hay que familiarizarse con la sintaxis de Grid entetior para despues usar la siguiente sintaxis.  */
-
-  /* 
-  -> grid: 200px 800px / 300px 300px; <- 
-  Aquí se unen las dos indicaciones en una sola linea de código primero coloocamos las dimenciones de los Rows (FILAS) y posteriormente colocamos las dimenciones de las columns (COLUMNAS). Y estas indicaciones las separapos con ayuda de una diagonal. */
-
-  @media (min-width: 768px) {
-    /* PARA HACERLO RESPONSIVE. */
-    grid-template-columns: repeat(3, 1fr) /* 1fr: Una fracción. Esto es lo mismo que poner: (33.3% 33.3% 33.3%)*/;
-    column-gap: 1rem; /* Es como el MARGIN para separar las columnas. */
+@media (min-width: 768px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
   }
 }
-
 .servicio {
   display: flex;
   flex-direction: column;
