@@ -427,4 +427,5 @@ Dentro de la media query solo vamos a colocar lo que se va a modificar del dise�
 
 > NOTA: En esta clase se automatiza la creacion de Media Queries.
 
-- **INVESTIGAR MAS SOBRE LAS MEDIA** ñaslkfdjañ
+- **INVESTIGAR MAS SOBRE LAS MEDIA** 
+> NOTA DE PRUEBA
