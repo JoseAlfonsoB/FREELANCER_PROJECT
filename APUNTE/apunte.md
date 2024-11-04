@@ -184,3 +184,44 @@ Aplica la siguiente regla a todos los parráfos hijos.
   color: blue;
 }
 ```
+
+## CLASE 25: Especificidad en CSS
+
+La especificidad es como el navegador va a mostrar el CSS de acuerdo a que tan especifico sea el **selector** que hemos creado.
+
+CSS es en cascada, pero eso no significa que si un selector aparece despues que otro este sera tomado en cuenta, sino que lo más importante es su **especifidad**.
+
+- **Ejemplo sin especificidad.**
+
+```CSS
+p {
+  color: blue;
+}
+p {
+  color: red;
+}
+```
+
+- **Ejemplo aplicando especificidad**
+
+```CSS
+p.parrafo {
+  color: blue;
+}
+p {
+  color: red;
+}
+```
+
+- **Ejemplo aplicando una mayor especificidad**
+
+```CSS
+p#parrafo {
+  color: blue;
+}
+p {
+  color: red!important;
+}
+```
+
+_Recuerda, si un elemento tiene un selector más especifico no importa mucho donde haya sido declarado, CSS decidira pos su especificidad._
