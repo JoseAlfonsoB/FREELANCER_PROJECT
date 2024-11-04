@@ -70,3 +70,13 @@ _Los archivos SVG se detectan facilmente con su extensión `.svg`_
 
 Los `heading` usualmente sirve / indica la introducción de **nuevos contenidos**
 
+## CLASE 18: Añadir imagenes con HTML
+
+### Sitios web para usar iconos
+1.- [Tabler Icons](https://tablericons.com/)
+
+2.- [HeroIcons](https://heroicons.dev/)
+
+3.- [Font Awesome](https://fontawesome.com/)
+
+Introducimos la etiqueta `<img>` la cual lo vamos a utilizar para colocar imagenes dentro de nuestro sitio web, además **no tiene etiqueta de cierre.**
