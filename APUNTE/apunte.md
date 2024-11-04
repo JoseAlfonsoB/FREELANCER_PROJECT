@@ -1,5 +1,7 @@
 # CURSO UDEMY DESARROLLO WEB
+
 ## PROYECTO FREELANCER
+
 ## CLASE 9
 
 ### Etiquetas basícas en HTML
@@ -64,6 +66,7 @@ _Los archivos SVG se detectan facilmente con su extensión `.svg`_
 <aside>
 <div>
 ```
+
 <!-- COLOCAR IAMGEN PARA UNA MEJOR COMPRENSIÓN. -->
 
 > REGLA: Si el **primer elemento** hijo es un `heading` lo tenemos que **agrupar** en un `section`, pero si se encuentra dentro del contenido principal, lo agrupamos dentro de un `main`.
@@ -73,6 +76,7 @@ Los `heading` usualmente sirve / indica la introducción de **nuevos contenidos*
 ## CLASE 18: Añadir imagenes con HTML
 
 ### Sitios web para usar iconos
+
 1.- [Tabler Icons](https://tablericons.com/)
 
 2.- [HeroIcons](https://heroicons.dev/)
@@ -92,19 +96,22 @@ Esto para verificar que estamos colocando los estilos al elemento correcto, por 
 > TAREA: Investigar que son los pixeles, los REM y los EM,
 
 ### Unidades de medida en CSS
+
 CSS ofrece varias unidades de medida para dimensionar elementos de una página web. Algunas de las unidades de medida más comunes son los **pixeles** (_px_) , **porcentajes** (_%_), **picas** (_pc_) y las unidades **EM** y **REM**.
 
 #### Unidades EM
-La **unidad EM** es relativa al tamaño de fuente del elemento padre. Cuando se especifica un valor en EM, se toma como referencia el tamaño de la fuente del elemento contenedor más cercano. Por ejemplo, si ele tamaño de una fuente de un parráfo es de **16px**. Si un elemento secundario dentro de ese parráfo tiene un tamaño de fuente de **1.5em** su tamaño de fuete será de **24px** (_1,5 * 16px_).
+
+La **unidad EM** es relativa al tamaño de fuente del elemento padre. Cuando se especifica un valor en EM, se toma como referencia el tamaño de la fuente del elemento contenedor más cercano. Por ejemplo, si ele tamaño de una fuente de un parráfo es de **16px**. Si un elemento secundario dentro de ese parráfo tiene un tamaño de fuente de **1.5em** su tamaño de fuete será de **24px** (_1,5 \* 16px_).
 
 ##### Ventajas de EM
+
 - **Escalabilidad:** Los valores de EM son relztivos y se escalana automáticamente cuando se cambia el tema de la fuente del elemento padre. Esto facilita al creación de diseños flexibles y adaptables.
 
 - **Accesibilidad:** EM permite a los usuarios ajustar el tipo de fuente en su navegador segun sus preferencias de lectura.
 
 #### Unidades REM
 
-La unidad REM, que signififca **"Root EM"** (_EM raíz_), es similara a EM, pero tomá como referencia el tamaño de fuente del elemento raíz del documento HTML en lugar del elemento padre. Por defecto, el tamaño de fuente raíz es de 16px en la mayoria de los navegadores. Si se establece un amrgen de **un REM** en un elemento, sera igual a **16px**. Si se cambía el tamaño de fuente raíz a 20px, todos los elementos con unidad REM se ajustaran en consecuencia. 
+La unidad REM, que signififca **"Root EM"** (_EM raíz_), es similara a EM, pero tomá como referencia el tamaño de fuente del elemento raíz del documento HTML en lugar del elemento padre. Por defecto, el tamaño de fuente raíz es de 16px en la mayoria de los navegadores. Si se establece un amrgen de **un REM** en un elemento, sera igual a **16px**. Si se cambía el tamaño de fuente raíz a 20px, todos los elementos con unidad REM se ajustaran en consecuencia.
 
 ##### Ventajas de REM
 
@@ -112,3 +119,68 @@ La unidad REM, que signififca **"Root EM"** (_EM raíz_), es similara a EM, pero
 
 - **Facilita el cambio global:** Cambiar el tamaño de fuente raíz afecta a todos los elementos que utilizan REM en la página, lo que facilita la adaptación global del diseño.
 
+## CLASE 24
+
+### Tipos de selectores
+
+- **Selector de elemento:**
+
+Seleccionara un elemento en base a su etiqeuta.
+
+```CSS
+p {
+  color: blue;
+}
+```
+
+- **Selector de clase:**
+
+Una clase se puede crear multiples veces (_es reutilizable_) e **inicia con un punto**.
+
+```CSS
+.cliente {
+  color: blue;
+}
+```
+
+- **Selector de ID:**
+
+Puede tener multiples ID's por página, pero **su nombre no pueden repetirse** en un documento HTML.
+
+Un ID inicia con un signo de **gato** / **almohadilla** (_#_)
+
+```CSS
+#cliente {
+  color: blue;
+}
+```
+
+- **Selector de atributo:**
+
+Selecciona elementos basados en algún atributo que tenga.
+
+```CSS
+[src = "logo.jpg"] {
+  color: blue;
+}
+```
+
+- **Combinación de decententes (selectores):**
+
+Selecciona los elementos hijos cuyo padre sea una clase (_o ID_) en especifico.
+
+```CSS
+.cliente .nombre {
+  color: blue;
+}
+```
+
+- **Todos los hijos:**
+
+Aplica la siguiente regla a todos los parráfos hijos.
+
+```CSS
+.cliente > p {
+  color: blue;
+}
+```
