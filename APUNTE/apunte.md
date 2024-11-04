@@ -80,3 +80,10 @@ Los `heading` usualmente sirve / indica la introducción de **nuevos contenidos*
 3.- [Font Awesome](https://fontawesome.com/)
 
 Introducimos la etiqueta `<img>` la cual lo vamos a utilizar para colocar imagenes dentro de nuestro sitio web, además **no tiene etiqueta de cierre.**
+
+## CLASE 21: Primeros pasos con CSS
+
+Cada que los estilos que colocamos a una etiqueta dentro de nuestra página web no se vean reflejados, nos vamos a dirigir al apartado de **insepccionar** del navegador que estemos utlizando para nuestro desarrollo, y vamos a seleccionar el **icono de la parte superior izquierda** (_que es como un cuadrado con una flecha apuntando hacia arriba a la izquierda_), y despues vamos a seleccionar el elemento en el cual no vemos reflejados los cambios de estilos.
+
+Esto para verificar que estamos colocando los estilos al elemento correcto, por medio de la clase o ID.
+
