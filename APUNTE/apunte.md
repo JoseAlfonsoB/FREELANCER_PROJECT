@@ -49,3 +49,24 @@ _Los archivos SVG se detectan facilmente con su extensión `.svg`_
 2.- **Separar los datos de HTML:** Gracias a XML, los datos HTML pueden almacenarse en archivos XML separados, lo qeu hace más sencilla su edición cada vez que sea necesaria.
 
 3.- **Simplifica el cambio a una nueva aplicación, sistema o plataforma:** Los datos XML se almacenan en formato de texto simple, haciendo más sencilla la futura expanción o actualización a un nuevo sistema de información, navegador o plataforma.
+
+## CLASE 16: Estructurar contenido HTML
+
+### Etiquetas par agrupar
+
+```HTML
+<header>
+<footer>
+<nav>
+<main>
+<section>
+<article>
+<aside>
+<div>
+```
+<!-- COLOCAR IAMGEN PARA UNA MEJOR COMPRENSIÓN. -->
+
+> REGLA: Si el **primer elemento** hijo es un `heading` lo tenemos que **agrupar** en un `section`, pero si se encuentra dentro del contenido principal, lo agrupamos dentro de un `main`.
+
+Los `heading` usualmente sirve / indica la introducción de **nuevos contenidos**
+
