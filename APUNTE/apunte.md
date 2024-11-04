@@ -1,5 +1,5 @@
-# CURSO DESARROLLO WEB
-
+# CURSO UDEMY DESARROLLO WEB
+## PROYECTO FREELANCER
 ## CLASE 9
 
 ### Etiquetas basícas en HTML
@@ -86,4 +86,29 @@ Introducimos la etiqueta `<img>` la cual lo vamos a utilizar para colocar imagen
 Cada que los estilos que colocamos a una etiqueta dentro de nuestra página web no se vean reflejados, nos vamos a dirigir al apartado de **insepccionar** del navegador que estemos utlizando para nuestro desarrollo, y vamos a seleccionar el **icono de la parte superior izquierda** (_que es como un cuadrado con una flecha apuntando hacia arriba a la izquierda_), y despues vamos a seleccionar el elemento en el cual no vemos reflejados los cambios de estilos.
 
 Esto para verificar que estamos colocando los estilos al elemento correcto, por medio de la clase o ID.
+
+## CLASE 23 Estilos a nuetro proyecto
+
+> TAREA: Investigar que son los pixeles, los REM y los EM,
+
+### Unidades de medida en CSS
+CSS ofrece varias unidades de medida para dimensionar elementos de una página web. Algunas de las unidades de medida más comunes son los **pixeles** (_px_) , **porcentajes** (_%_), **picas** (_pc_) y las unidades **EM** y **REM**.
+
+#### Unidades EM
+La **unidad EM** es relativa al tamaño de fuente del elemento padre. Cuando se especifica un valor en EM, se toma como referencia el tamaño de la fuente del elemento contenedor más cercano. Por ejemplo, si ele tamaño de una fuente de un parráfo es de **16px**. Si un elemento secundario dentro de ese parráfo tiene un tamaño de fuente de **1.5em** su tamaño de fuete será de **24px** (_1,5 * 16px_).
+
+##### Ventajas de EM
+- **Escalabilidad:** Los valores de EM son relztivos y se escalana automáticamente cuando se cambia el tema de la fuente del elemento padre. Esto facilita al creación de diseños flexibles y adaptables.
+
+- **Accesibilidad:** EM permite a los usuarios ajustar el tipo de fuente en su navegador segun sus preferencias de lectura.
+
+#### Unidades REM
+
+La unidad REM, que signififca **"Root EM"** (_EM raíz_), es similara a EM, pero tomá como referencia el tamaño de fuente del elemento raíz del documento HTML en lugar del elemento padre. Por defecto, el tamaño de fuente raíz es de 16px en la mayoria de los navegadores. Si se establece un amrgen de **un REM** en un elemento, sera igual a **16px**. Si se cambía el tamaño de fuente raíz a 20px, todos los elementos con unidad REM se ajustaran en consecuencia. 
+
+##### Ventajas de REM
+
+- **Cosnistencia:** REM ofrece una forma más predecible de gestionara tamaños de fuente raíz, lo que facilita la creación de diseños coherentes.
+
+- **Facilita el cambio global:** Cambiar el tamaño de fuente raíz afecta a todos los elementos que utilizan REM en la página, lo que facilita la adaptación global del diseño.
 
