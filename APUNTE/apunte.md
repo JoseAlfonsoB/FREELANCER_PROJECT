@@ -225,3 +225,31 @@ p {
 ```
 
 _Recuerda, si un elemento tiene un selector más especifico no importa mucho donde haya sido declarado, CSS decidira pos su especificidad._
+
+## CLASE 29: Estilos CSS a la navegación
+
+> NOTA: Podemos colocarle más de una clase a algun elemento (_etiqueta_) HTML, esto se hace separando el nombre de las clases con un espacio.
+
+```HTML
+<h1 clases="clase1 clase2">
+```
+
+Pero esto mismo solo funciona con las clases, con las ID´s no, ya que **un elemento HTML solo puede tener un ID**.
+
+## CLASE 30: Estilos CSS a la nevegación y Display en CSS
+
+Existen diferentes tipos de **display**, los que el navegador aplica por defecto son:
+
+- **Dsiplay block o  inline**.
+
+> Algunos elementos se van a mostrar de una forma y otros de otra.
+
+Todos los elementos en HTML ya tienen un display por default.
+
+- **Display block:**
+Significa que los elementos se colocarán **uno debajo del otro** sin importar mucho su contenido.
+Un ejemplo de estos son los `<div>`.
+
+- **Display inline:**
+Significa que los elementos se posicionaran a la derecha una ves que hayan tomado el espacio que requieran.
+Un ejemplo son los `<nav>`.
