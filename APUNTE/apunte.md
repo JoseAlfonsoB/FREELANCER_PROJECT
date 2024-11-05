@@ -187,7 +187,7 @@ Aplica la siguiente regla a todos los parráfos hijos.
 
 ## CLASE 25: Especificidad en CSS
 
-La especificidad es como el navegador va a mostrar el CSS de acuerdo a que tan especifico sea el **selector** que hemos creado.
+La **especificidad** es como el navegador va a mostrar el CSS de acuerdo a que tan especifico sea el **selector** que hemos creado.
 
 CSS es en cascada, pero eso no significa que si un selector aparece despues que otro este sera tomado en cuenta, sino que lo más importante es su **especifidad**.
 
