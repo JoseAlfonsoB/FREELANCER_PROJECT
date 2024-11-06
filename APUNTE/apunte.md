@@ -253,3 +253,23 @@ Un ejemplo de estos son los `<div>`.
 - **Display inline:**
 Significa que los elementos se posicionaran a la derecha una ves que hayan tomado el espacio que requieran.
 Un ejemplo son los `<nav>`.
+
+## CLASE 32: Estilos de navegación y posicionando los enlaces con FlexBox
+
+### Los 2 ejes de FlexBox
+
+En FlexBox solo puedes colocar y dirigir tus elementos en una sola dirección filas (_rows_) o columnas (_columns_).
+
+El valor de **Row** se aplica por defecto al definir un **display: flex;**
+
+Los otros valores son **row-reverse**, **column** y **column-revers**.
+
+Si elegimos a **row** o **row-reverse** los elementos hijos se mostraran de izquierda a derecha uno junto al otro.
+
+<!-- Colocar imagen para una mejor comprensión. -->
+
+Al elejir **column** o **column-revers** los elementos colocaran de arriba hacia abajo.
+
+<!-- Colocar imagne para una mejor comprensión. -->
+
+Flex-Box es especialmente diseñado para alinear tus elemenots en tus diseños. No añade efectos de animación, ni textos, es una tecnologia utilizada unicamente para los layouts y sustituye a los floats o table-cell.
