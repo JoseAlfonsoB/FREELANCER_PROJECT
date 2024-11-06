@@ -240,19 +240,19 @@ Pero esto mismo solo funciona con las clases, con las ID´s no, ya que **un elem
 
 Existen diferentes tipos de **display**, los que el navegador aplica por defecto son:
 
-- **Dsiplay block o  inline**.
+- **Dsiplay block o inline**.
 
 > Algunos elementos se van a mostrar de una forma y otros de otra.
 
 Todos los elementos en HTML ya tienen un display por default.
 
 - **Display block:**
-Significa que los elementos se colocarán **uno debajo del otro** sin importar mucho su contenido.
-Un ejemplo de estos son los `<div>`.
+  Significa que los elementos se colocarán **uno debajo del otro** sin importar mucho su contenido.
+  Un ejemplo de estos son los `<div>`.
 
 - **Display inline:**
-Significa que los elementos se posicionaran a la derecha una ves que hayan tomado el espacio que requieran.
-Un ejemplo son los `<nav>`.
+  Significa que los elementos se posicionaran a la derecha una ves que hayan tomado el espacio que requieran.
+  Un ejemplo son los `<nav>`.
 
 ## CLASE 32: Estilos de navegación y posicionando los enlaces con FlexBox
 
@@ -273,3 +273,11 @@ Al elejir **column** o **column-revers** los elementos colocaran de arriba hacia
 <!-- Colocar imagne para una mejor comprensión. -->
 
 Flex-Box es especialmente diseñado para alinear tus elemenots en tus diseños. No añade efectos de animación, ni textos, es una tecnologia utilizada unicamente para los layouts y sustituye a los floats o table-cell.
+
+## CLASE 33: Estilos par escribir código CSS - BEM, Modulos y Utilidades
+
+### ¿Cómo escribir código CSS?
+
+Existen diferentes maneras de escribir código CSS, las más comunes son: **BEM, Utility First** o **Módulo**. Si el proyecto tiende a ser grande es buena idea a usar cualquiera de los tres anteriores.
+
+> NOTA: Investigar más a fondo sobre lo que es BEM, Utility-First y los Módulos.
