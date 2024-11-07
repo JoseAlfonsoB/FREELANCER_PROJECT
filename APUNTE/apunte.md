@@ -426,3 +426,5 @@ Todo esto lo lgramos con la ayuda de las **Media Queries**. Ejemplo de sintaxis:
 Dentro de la media query solo vamos a colocar lo que se va a modificar del diseño de la pantalla, no es necesario colocarle todos los valores.
 
 > NOTA: En esta clase se automatiza la creacion de Media Queries.
+
+- **INVESTIGAR MAS SOBRE LAS MEDIA QUERIES**
