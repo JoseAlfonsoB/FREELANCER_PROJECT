@@ -296,15 +296,19 @@ Basicámente creamos clases con una sola propiedad que describe que es lo que ha
 
 ```CSS
 .texto-center {} /* Si queremos centrar un texto, creamos una clase llamada texto. y dentro colocamos el código CSS para centrar el texto */
+```
 
-/* Si queremos agregar una paleta de colores, tendriamos muchas clases */
+Si queremos agregar una paleta de colores, tendriamos muchas clases.
 
+```CSS
 .color-red-100 {} /* La propiedad de al final (el número) indicaría la intensidad del color */
 .bg-blue-200 {} /* Esta clase sería para colocar un color de fondo */+
+```
 
-/* Clases para colocar <<padding>> y <<margin>> */
+Clases para colocar `<padding>` y `<margin>`
 
-.p-2 {} /* padding de 2 */ 
+```CSS
+.p-2 {} /* padding de 2 */
 .m-2 {} /* margin de 2 */
 ```
 
@@ -323,7 +327,9 @@ Definimos una clase "padre", y despues vamos seleccionando cada una de las etiqu
 .card img {}
 .card a {}
 ```
+
 _Es posible utilizar más de un enfoque en un mismo proyecto._
+
 > TAREA: Investigar más a fondo sobre lo que es BEM, Utility-First y los Módulos.
 
 ### Métodologia BEM (Bloque, Elemento, Modificador)
@@ -350,19 +356,19 @@ _Por ejemplo, si tenemos un bloque que representa un botón, su clase CSS se lla
 
 Un **elemento** es una parte **específica y dependiente de un bloque**. Los elementos están dentro de los bloques y se utilizan para componer el diseño y la funcionalidad de un bloque. Se identifican utilizando una clase CSS que lleva el nombre del bloque seguido de un guion bajo y el nombre del elemento.
 
-_Por ejemplo, si tenemos un bloque de formulario con un campo de entrada de texto, su clase CSS se llamaría «.formulario__campo». En este caso, el bloque es «formulario» y el elemento es «campo». Esto ayuda a entender rápidamente la estructura del código y su relación con otros bloques y elementos._
+_Por ejemplo, si tenemos un bloque de formulario con un campo de entrada de texto, su clase CSS se llamaría «.formulario\_\_campo». En este caso, el bloque es «formulario» y el elemento es «campo». Esto ayuda a entender rápidamente la estructura del código y su relación con otros bloques y elementos._
 
 Finalmente, los **modificadores** se utilizan para **cambiar la apariencia o el comportamiento de un bloque o elemento**. Los modificadores se representan mediante una clase CSS adicional que se añade al bloque o elemento relevante.
 
-_Los modificadores se escriben después de un doble guion bajo (__) _para elementos y después de un solo guion bajo (_) para bloques. Por ejemplo, si tenemos un botón que quiere tener un estado «activo» o «desactivado», podríamos utilizar las clases «.boton–activo» y «.boton–desactivado» para aplicar diferentes estilos a esos botones en particular._
+_Los modificadores se escriben después de un doble guion bajo (\_\_) \_para elementos y después de un solo guion bajo (_) para bloques. Por ejemplo, si tenemos un botón que quiere tener un estado «activo» o «desactivado», podríamos utilizar las clases «.boton–activo» y «.boton–desactivado» para aplicar diferentes estilos a esos botones en particular.\_
 
 Los nombre de las clases con cenversion BEM, se pueden tener la siguiente sintaxis:
 
 - [bloque]
-- [bloque]__[elemento]
+- [bloque]\_\_[elemento]
 - [bloque]--[modificador]
 - [elemento]--[modificador]
-- [bloque]__[elemento]--[modificador]
+- [bloque]\_\_[elemento]--[modificador]
 
 Y así se veria el HTML
 
@@ -373,7 +379,8 @@ Y así se veria el HTML
 ```
 
 IMPORTANTE: Recuerda que:
-- Los guiones bajos (__) se usan para separar el bloque del elemento.
+
+- Los guiones bajos (\_\_) se usan para separar el bloque del elemento.
 - Los guienes medios (--) se usan para separar el bloque o el elemento del modificador.
 
 #### Ventajas de utilizar BEM
@@ -385,7 +392,12 @@ La métodologia BEM ofrece varias ventajas que la hacen una opción atractiva pa
 - **Reutilización**: Los bloques y elementos pueden ser fácilmente reutilizados en diferentes partes del sitio sin necesidad de reescribir código.
 - **Escalabilidad**: BEM es una metodología que se adapta fácilmente a proyectos grandes y complejos, ya que organiza el código de manera estructurada y coherente.
 
-
 > FUENTES:
-[¿Qué es BEM en CSS?](https://we-school.es/que-es-bem-en-css/)
-| [Guia de BEM para CSS](https://platzi.com/blog/bem/)
+> [¿Qué es BEM en CSS?](https://we-school.es/que-es-bem-en-css/)
+> | [Guia de BEM para CSS](https://platzi.com/blog/bem/)
+
+### Métodologia Utitity-First
+
+#### ¿En qué consiste el enfoque Utility-First en CSS?
+
+El enfoque **Utility-First CSS** se basa en el uso de **clases utilitarias** para construir interfaces de usuario de manera eficiente y altamente personalizable. A diferencia de los enfoques tradicionales que utilizan clases semánticas o componentes, el enfoque Utility-First se centra en clases pequeñas y de propósito único que aplican estilos específicos directamente a los elementos HTML.
