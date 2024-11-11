@@ -326,3 +326,66 @@ Definimos una clase "padre", y despues vamos seleccionando cada una de las etiqu
 _Es posible utilizar más de un enfoque en un mismo proyecto._
 > TAREA: Investigar más a fondo sobre lo que es BEM, Utility-First y los Módulos.
 
+### Métodologia BEM (Bloque, Elemento, Modificador)
+
+**BEM** funciona identificando el bloque, el elemento y el modificador de un componente.
+
+BEM en CSS es una metodología de nomenclatura que se utiliza para **organizar y estructurar el código CSS** de una forma más modular y reutilizable. BEM significa **Bloque, Elemento y Modificador**, y se basa en la idea de dividir el código en bloques independientes, elementos dentro de esos bloques y modificadores que permiten aplicar estilos adicionales de forma sencilla y consistente. Esta metodología es ampliamente adoptada en la industria del desarrollo web por su capacidad para mejorar la legibilidad, mantenibilidad y escalabilidad de los estilos CSS.
+
+El BEM (Bloque, Elemento, Modificador) es una metodología de nomenclatura para escribir y organizar el código CSS de manera más eficiente y sostenible. Esta metodología se ha vuelto cada vez más popular en los últimos años debido a sus beneficios en la legibilidad, reutilización y mantenibilidad del código.
+
+El objetivo principal de BEM es evitar la creación de **selectores CSS muy específicos y anidados**, lo cual puede generar problemas de especificidad y dificultar el mantenimiento del código. **Con BEM, se busca tener selectores más claros y desacoplados**, lo que facilita la comprensión y modificación del código en el futuro.
+
+#### Bloques, Elementos y Modificadores
+
+La nomenclatura BEM se basa en tres conceptos principales: bloques, elementos y modificadores. Estos tres conceptos son los componentes básicos que se utilizan para construir la estructura del código CSS.
+
+- **Bloque** es el contenedor principal del componente.
+- **Elemento** son las partes internas que conforman el componente.
+- **Modificador** son las variaciones del bloque o del elemento.
+
+Un **bloque** es un **componente independiente y reutilizable de la interfaz de usuario**. Puede ser cualquier elemento HTML, como un botón, un menú o un formulario. Los bloques se identifican utilizando una clase CSS que lleva el mismo nombre que el elemento HTML al que representan.
+
+_Por ejemplo, si tenemos un bloque que representa un botón, su clase CSS se llamaría «.boton». Esto permite identificar y aislar fácilmente el estilo asociado a ese botón en el código CSS._
+
+Un **elemento** es una parte **específica y dependiente de un bloque**. Los elementos están dentro de los bloques y se utilizan para componer el diseño y la funcionalidad de un bloque. Se identifican utilizando una clase CSS que lleva el nombre del bloque seguido de un guion bajo y el nombre del elemento.
+
+_Por ejemplo, si tenemos un bloque de formulario con un campo de entrada de texto, su clase CSS se llamaría «.formulario__campo». En este caso, el bloque es «formulario» y el elemento es «campo». Esto ayuda a entender rápidamente la estructura del código y su relación con otros bloques y elementos._
+
+Finalmente, los **modificadores** se utilizan para **cambiar la apariencia o el comportamiento de un bloque o elemento**. Los modificadores se representan mediante una clase CSS adicional que se añade al bloque o elemento relevante.
+
+_Los modificadores se escriben después de un doble guion bajo (__) _para elementos y después de un solo guion bajo (_) para bloques. Por ejemplo, si tenemos un botón que quiere tener un estado «activo» o «desactivado», podríamos utilizar las clases «.boton–activo» y «.boton–desactivado» para aplicar diferentes estilos a esos botones en particular._
+
+Los nombre de las clases con cenversion BEM, se pueden tener la siguiente sintaxis:
+
+- [bloque]
+- [bloque]__[elemento]
+- [bloque]--[modificador]
+- [elemento]--[modificador]
+- [bloque]__[elemento]--[modificador]
+
+Y así se veria el HTML
+
+```HTML
+<form ="button"></form>
+<input ="button__entrada">
+<input ="button--activo">
+```
+
+IMPORTANTE: Recuerda que:
+- Los guiones bajos (__) se usan para separar el bloque del elemento.
+- Los guienes medios (--) se usan para separar el bloque o el elemento del modificador.
+
+#### Ventajas de utilizar BEM
+
+La métodologia BEM ofrece varias ventajas que la hacen una opción atractiva para escribir código CSS:
+
+- **Legibilidad**: El uso de nombres de clases descriptivas y autoexplicativas facilita la comprensión del código para otros desarrolladores.
+- **Mantenibilidad**: Al tener estilos más claros y desacoplados, es más fácil realizar cambios y modificaciones en el código sin generar efectos no deseados en otras partes del sitio.
+- **Reutilización**: Los bloques y elementos pueden ser fácilmente reutilizados en diferentes partes del sitio sin necesidad de reescribir código.
+- **Escalabilidad**: BEM es una metodología que se adapta fácilmente a proyectos grandes y complejos, ya que organiza el código de manera estructurada y coherente.
+
+
+> FUENTES:
+[¿Qué es BEM en CSS?](https://we-school.es/que-es-bem-en-css/)
+| [Guia de BEM para CSS](https://platzi.com/blog/bem/)
