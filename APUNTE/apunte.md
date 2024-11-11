@@ -280,4 +280,49 @@ Flex-Box es especialmente diseñado para alinear tus elemenots en tus diseños. 
 
 Existen diferentes maneras de escribir código CSS, las más comunes son: **BEM, Utility First** o **Módulo**. Si el proyecto tiende a ser grande es buena idea a usar cualquiera de los tres anteriores.
 
-> NOTA: Investigar más a fondo sobre lo que es BEM, Utility-First y los Módulos.
+#### BEM (Bloque, Elemento, Modificador)
+
+```CSS
+.card {} /* Esto viene representando un "BLOQUE" */
+.card__titulo {} /* Esto representa a un "ELEMENTO" */
+.card__imagen {} /* Esto es otro "ELEMENTO" */
+.card__boton {} /* Y esto es otro "ELEMENTO" */
+.card__boton--activo {} /* Esto representa a un "MODIFICADOR" */
+```
+
+#### Utitity First
+
+Basicámente creamos clases con una sola propiedad que describe que es lo que haría.
+
+```CSS
+.texto-center {} /* Si queremos centrar un texto, creamos una clase llamada texto. y dentro colocamos el código CSS para centrar el texto */
+
+/* Si queremos agregar una paleta de colores, tendriamos muchas clases */
+
+.color-red-100 {} /* La propiedad de al final (el número) indicaría la intensidad del color */
+.bg-blue-200 {} /* Esta clase sería para colocar un color de fondo */+
+
+/* Clases para colocar <<padding>> y <<margin>> */
+
+.p-2 {} /* padding de 2 */ 
+.m-2 {} /* margin de 2 */
+```
+
+Basicámente en Utility First vas a tener unicamente una propiedad y un valor por clase.
+
+> DESVENTAJA: Terminas usando demasiado código CSS
+
+#### Módulos
+
+Definimos lo que es el contenido principal y despues seleccionamos los elementos HTML, como lo son las imagenes, un h2, un enlace, etc.
+Definimos una clase "padre", y despues vamos seleccionando cada una de las etiquetas del código HTML.
+
+```CSS
+.card {}
+.card h2 {}
+.card img {}
+.card a {}
+```
+_Es posible utilizar más de un enfoque en un mismo proyecto._
+> TAREA: Investigar más a fondo sobre lo que es BEM, Utility-First y los Módulos.
+
