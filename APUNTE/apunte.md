@@ -403,4 +403,27 @@ La métodologia BEM ofrece varias ventajas que la hacen una opción atractiva pa
 El enfoque **Utility-First CSS** se basa en el uso de **clases utilitarias** para construir interfaces de usuario de manera eficiente y altamente personalizable. A diferencia de los enfoques tradicionales que utilizan clases semánticas o componentes, el enfoque Utility-First se centra en clases pequeñas y de propósito único que aplican estilos específicos directamente a los elementos HTML.
 
 
-conclusion
+## CLASE 35 INSTRRUCCION A RESPONSIVE WEB DESIGN Y MEDIA QUERY
+
+### ¿Qué es Responsive Web Design?
+
+Es un enfonque que nos dice que nuestro diseño deberia adaptarse a las interacciones del usuario y la resolucion que utiliza.
+
+Por lo tanto, los sitios web deberana adaptarse a celulares, tabletas, laptops, coputadoras de escritorio, televiseres, etc.
+
+Todo esto lo lgramos con la ayuda de las **Media Queries**. Ejemplo de sintaxis:
+
+#### Media Query
+
+```CSS
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+```
+
+Dentro de la media query solo vamos a colocar lo que se va a modificar del diseño de la pantalla, no es necesario colocarle todos los valores.
+
+> NOTA: En esta clase se automatiza la creacion de Media Queries.
